@@ -95,8 +95,16 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RedFish.xaml.cs">
-      <DependentUpon>RedFish.xaml</DependentUpon>
+    <Compile Include="BlankPage1.cs" />
+    <Compile Include="..\..\..\..\..\Desktop\BlankPage2.xaml.cs">
+      <DependentUpon>BlankPage2.xaml</DependentUpon>
+      <Link>BlankPage2.xaml.cs</Link>
+    </Compile>
+    <Compile Include="BlankPage3.xaml.cs">
+      <DependentUpon>BlankPage3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage4.xaml.cs">
+      <DependentUpon>BlankPage4.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -110,14 +118,21 @@
     <None Include="App4_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Pics\Dropdown.jpg" />
+    <Content Include="Assets\Pics\Dropdown1.jpg" />
     <Content Include="Assets\Pics\FlClip.gif" />
+    <Content Include="Assets\Pics\Mackerel1.jpg" />
     <Content Include="Assets\Pics\REDFISH.jpg" />
     <Content Include="Assets\Pics\Redfish1.jpg" />
     <Content Include="Assets\Pics\Redfish2.jpg" />
     <Content Include="Assets\Pics\Redfish3.jpg" />
     <Content Include="Assets\Pics\snook.png" />
+    <Content Include="Assets\Pics\Snook1.jpg" />
+    <Content Include="Assets\Pics\Snook2.jpg" />
+    <Content Include="Assets\Pics\Snook3.jpg" />
     <Content Include="Assets\Pics\spanishmackerel.jpg" />
     <Content Include="Assets\Pics\Trout.jpg" />
+    <Content Include="Assets\Pics\trout1.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -132,6 +147,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="..\..\..\..\..\Desktop\BlankPage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Link>BlankPage2.xaml</Link>
+    </Page>
+    <Page Include="BlankPage3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="RedFish.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

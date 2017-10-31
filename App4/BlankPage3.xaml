@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="App4.BlankPage3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+            <TextBlock Text="Spanish Mackerel " HorizontalAlignment="Center" FontSize="20" Margin="20"/>
+            <FlipView Height="200" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <FlipView.Items>
+                    <Image Source="Assets/Pics/Mackerel1.jpg" HorizontalAlignment="Center" VerticalAlignment="Center"></Image>
+
+                </FlipView.Items>
+            </FlipView>
+
+            <TextBlock Text="Description"/>
+            <TextBox IsReadOnly="True" Text="Color of back green, shading to silver on sides with golden yellow irregular spots found above and below the lateral line Front of dorsal fin is black Lateral line curves gently to base of tail. Spanish mackerel are prevalent throughout Florida waters: inshore, offshore and nearshore.  They are frequently found over grass beds and reefs. These mackerel are absent from north Florida waters in winter. Spanish mackerel are a schooling fish that migrates northward in spring, returning to southerly waters when water temperature drops below 70 degrees F.  They spawns offshore from spring through summer and feeds on small fish and squid."  Height="251"  TextWrapping="Wrap" Width="340" Margin="10,0"></TextBox>
+            <Button Content="----Back----" Click="BACK" HorizontalAlignment="Stretch"></Button>
+        </StackPanel>
+    </Grid>
+</Page>

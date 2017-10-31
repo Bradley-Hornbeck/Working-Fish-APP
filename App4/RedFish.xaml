@@ -17,11 +17,12 @@
                     <Image Source="Assets/Pics/Redfish3.jpg"></Image>
                 </FlipView.Items>
             </FlipView>
-                      
+
             <TextBlock Text="Description"/>
-            <TextBox Text=" Red drum, also called redfish, channel bass, spottail, red bass or reds, 
+            <TextBlock Text=" Red drum, also called redfish, channel bass, spottail, red bass or reds, 
                      are one of Florida's most popular sport fish and the state's most widespread estuarine fish. Red drum are named after the &quot;drumming&quot; sound the make during spawning and when taken out of the water. The sound is produced by muscles rubbing against the inflated air bladder. Red drum inhabit the nearshore and offshore waters throughout the Gulf of Mexico and along the Atlantic coast from Massachusetts to Key West. Juvenile red drum inhabit rivers, bays, canals, tidal creeks, and passes in estuaries for up to four years, after which they usually move to nearshore or open ocean waters as adults. Red drum in Florida can reach lengths of 45 inches and weigh up to 51 pounds. The world record red drum was caught off North Carolina waters in 1984 and it weighed 94 pounds, 2 ounces.The oldest recorded red drum in Florida was aged at 40 years. Floating a live shrimp under a popping cork is a good way to fish for red drum. They also chase crabs, mullet, pinfish and killifish (mud minnows). Casting soft-bodied jigs, spoons and even top-water plugs will catch the attention of these powerful estuarine musicians." TextWrapping="Wrap" Height="270"/>
-            
+            <Button Content="----Back----" Click="BACK" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="#33009409"  />
+
         </StackPanel>
     </Grid>
 </Page>

@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="App4.BlankPage4"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+            <TextBlock Text="Spotted Seatrout (Saltwater)"></TextBlock>
+            <FlipView Height="200">
+                <FlipView.Items>
+                    <Image Source="Assets/Pics/trout1.jpg"></Image>
+                </FlipView.Items>
+            </FlipView>
+            <TextBlock Text="Description"></TextBlock>
+            <TextBlock TextWrapping="Wrap" Text="Seatrout found inshore and nearshore in and around seagrass meadows, mangrove-fringed shorelines, deep holes and channels and above oyster bars. Free-line live shrimp or small pinfish or pigfish (grunts) near the bottom to entice trout out of grass-bed holes. Attaching a float will allow these baits to drift over the grass beds as you search for trout. Casting with soft-bodied jigs, top-water poppers and spoons can be effective. Trout are very delicate, so returning unwanted or illegal fish promptly to the water is necessary to maintain a healthy population. Spotted seatrout are a good eating fish.   "></TextBlock>
+            <Button Content="---Back---" Click="BACK" VerticalAlignment="Center" Height="30" HorizontalAlignment="Stretch"></Button>
+        </StackPanel>
+    </Grid>
+</Page>

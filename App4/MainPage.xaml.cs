@@ -27,6 +27,18 @@ namespace App4
         {
             this.InitializeComponent();
         }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            SplitviewName.IsPaneOpen = !SplitviewName.IsPaneOpen;
+        }
+        private void Dropup(object sender, RoutedEventArgs e)
+        {
+            SplitviewName.IsPaneOpen = !SplitviewName.IsPaneOpen;
+        }
+        public void SWfish (object sender, RoutedEventArgs e)
+        {
+            SW.IsPaneOpen = !SW.IsPaneOpen;
+        }
 
         private void RedFish_click(object sender, RoutedEventArgs e)
         {
@@ -35,17 +47,17 @@ namespace App4
 
         private void Snook_click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(BlankPage2));
         }
 
         private void Trout_click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(BlankPage4));
         }
 
         private void Mackerel_click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(BlankPage3));
         }
     }
 }

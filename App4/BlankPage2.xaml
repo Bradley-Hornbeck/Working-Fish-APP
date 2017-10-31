@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="App4.BlankPage2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+            <TextBlock Text="Snook " HorizontalAlignment="Center" FontSize="20" Margin="20"/>
+            <FlipView x:Name="Sflip" Height="200" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <FlipView.Items>
+                    <Image Source="Assets/Pics/Snook2.jpg" HorizontalAlignment="Center" VerticalAlignment="Center"></Image>
+                    <Image Source="Assets/Pics/Snook1.jpg"></Image>
+                    <Image Source="Assets/Pics/Snook3.jpg"></Image>
+                </FlipView.Items>
+            </FlipView>
+
+            <TextBlock Text="Description"/>
+            <TextBox Height="270" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Text="Snook are found from central Florida south, usually inshore in coastal and brackish waters.  They are also common along mangrove shorelines, seawalls, and bridges.  Snook are also on reefs and around pilings nearshore. They congregate in large schools during summer in deep passes and inlets to spawn. Snook begin life as males, but between 18 and 22 inches long some become females.  Spawning occurs primarily in summer.  Snook school along shore and in passes during spawning season.  They feed on fish and large crustaceans. State Record: 44 lb 3 oz, caught near Ft. Myers
+Fishing Tips and Facts: They orient themselves to face moving water and wait for prey to be carried down the current. Snook jump clear of the water, and burst into long runs. Use live pinfish, small mullet, shrimp, or sardines free-lined or fished off the bottom with a fish finder rig. They take a large variety of lures based on water conditions. Beware of the snook's razor-sharp gill covers! Snook make excellent table fare.
+Snook cannot tolerate water temperatures below 60˚F.  Also, snook can tolerate wholly fresh or saltwater."></TextBox>
+            <Button Click="BACK" Content="----Back----" HorizontalAlignment="Stretch"></Button>
+        </StackPanel>
+    </Grid>
+</Page>

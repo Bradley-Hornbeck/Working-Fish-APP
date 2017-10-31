@@ -7,51 +7,92 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="AntiqueWhite">
-        <StackPanel VerticalAlignment="Center">
-            <Image Source="Assets/Pics/FlClip.gif" HorizontalAlignment="Center"
-                   Margin="10,0,0,0" Width="350" Height="412" Opacity=".4" RenderTransformOrigin="0.5,0.5" >
-                <Image.RenderTransform>
-                    <CompositeTransform Rotation="11.582"/>
-                </Image.RenderTransform>
-            </Image>
-
-        </StackPanel>
-        <TextBlock HorizontalAlignment="Center" FontSize="45" Margin="65,54,49,0" 
-                   TextWrapping="Wrap" Text="Florida Fish" VerticalAlignment="Top" Height="90" Width="246"/>
-        <StackPanel VerticalAlignment="Center">
-
-            <Button BorderBrush="Black" Background="White" Click="RedFish_click"
-                    x:Name ="RedFish" MaxWidth="125" Margin="0">
-                <StackPanel>
-                    <Image VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  
-                           Source="Assets/Pics/REDFISH.jpg"></Image>
-                </StackPanel>
-            </Button>
-            <Button BorderBrush="Black" Background="White" Click="Snook_click"
-                    x:Name ="snook" MaxWidth="125" Margin="0">
-                <StackPanel>
-                    <Image VerticalAlignment="Stretch" HorizontalAlignment="Stretch" 
-                           Source="Assets/Pics/snook.png"></Image>
-                </StackPanel>
-            </Button>
-            <Button BorderBrush="Black" Background="White" Click="Mackerel_click"
-                    x:Name ="Mackerel" MaxWidth="125" Margin="0">
-                <StackPanel>
-                    <Image VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  
-                           Source="Assets/Pics/spanishmackerel.jpg"></Image>
-                </StackPanel>
-            </Button>
-            <Button BorderBrush="Black" Background="White" Click="Trout_click"
-                    x:Name ="Trout" MaxWidth="125" Margin="0" Height="63" Width="125">
-                <StackPanel>
-                    <Image VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  
-                           Source="Assets/Pics/Trout.jpg"></Image>
-                </StackPanel>
-            </Button>
+    <Grid Background="White">
 
 
-        </StackPanel>
+        <Image Source="Assets/Pics/FlClip.gif" HorizontalAlignment="Center"
+                   Margin="2.818,84.149,2.811,125.011" Width="354.371" Opacity=".1" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" >
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="1.173"/>
+            </Image.RenderTransform>
+        </Image>
+
+        <TextBlock HorizontalAlignment="Center" FontSize="45" Margin="0" 
+                   TextWrapping="Wrap" Text="Florida Fish" VerticalAlignment="Top" Height="90" Width="246" FontStyle="Italic" />
+
+
+        <Button  Name="power" Click="Button_Click" Height="50" Width="40" Margin="5,0,0,0" VerticalAlignment="Top">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Assets/Pics/Dropdown.jpg" Height="50" Opacity="50"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+   
+            <SplitView  Name="SplitviewName" DisplayMode="CompactInline" CompactPaneLength="5" OpenPaneLength="90" Margin="0,0,300,0">
+                <SplitView.Pane>
+                    <StackPanel Width="90" >
+                        <StackPanel.Background>
+                            <ImageBrush ImageSource="/Assets/woodbackground.png" Stretch="UniformToFill" Opacity="0.3"/>
+
+                        </StackPanel.Background>
+                        <Button Name="HomeButton" Click="Dropup" Margin="5,0,0,0" Grid.Row="1" ToolTipService.ToolTip="Close" ToolTipService.Placement="Right">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Image Source="Assets/Pics/Dropdown1.jpg" Height="40" Width="40" Stretch="Fill" Opacity="100"/>
+
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button Name="RedFish" Click="RedFish_click" Height="40" Width="70" Margin="5,0,0,0" Grid.Row="1" ToolTipService.ToolTip="Redfish" ToolTipService.Placement="Right">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Image Source="Assets/Pics/REDFISH.jpg" Height="40" Width="70" Stretch="Fill" Opacity="50"/>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button Name="Snook" Click="Snook_click" Height="40" Width="70" Margin="5,0,0,0" Grid.Row="1" ToolTipService.ToolTip="Snook" ToolTipService.Placement="Right">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Image Source="Assets/Pics/snook.png" Height="40" Width="70" Stretch="Fill" Opacity="50"/>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button Name="Mackerel" Click="Mackerel_click" Height="40" Width="70" Margin="5,0,0,0" Grid.Row="1" ToolTipService.ToolTip="Spanish Mackerel" ToolTipService.Placement="Right">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Image Source="Assets/Pics/spanishmackerel.jpg" Height="40" Width="70" Stretch="Fill" Opacity="50"/>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button Name="Trout" Click="Trout_click" Height="40" Width="70" Margin="5,0,0,0" Grid.Row="1" ToolTipService.ToolTip="Spotted Seatrout" ToolTipService.Placement="Right">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Image Source="Assets/Pics/Trout.jpg" Height="40" Width="70" Stretch="Fill" Opacity="50"/>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    <Button Click="SWfish" Width="50" Height="50">
+                        
+                    </Button>
+                       
+                    </StackPanel>
+                </SplitView.Pane>
+            </SplitView>
+        <SplitView Name="SW" Margin="50" Width="90" HorizontalAlignment="Left">
+            <SplitView.Pane>
+                <StackPanel Width="90" HorizontalAlignment="Left">
+                    <Button>
+                        
+                    </Button>
+                </StackPanel>
+              
+            </SplitView.Pane>
+        </SplitView>
+       
+
+
+
 
     </Grid>
 </Page>
